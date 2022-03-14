@@ -1,2 +1,5 @@
 import sys
-print(' '.join(sys.argv[1:]))
+
+with open(sys.argv[1], 'r') as fp:
+    for jim in fp:
+        print(jim.rstrip('\n\r'))
