@@ -1,5 +1,5 @@
 import sys
 
-with open(sys.argv[1], 'r') as fp:
-    for jim in fp:
-        print(jim.rstrip('\n\r'))
+with open(sys.argv[1], 'r') as file:
+    for line in file:
+        print(line.rstrip('\n\r'))
