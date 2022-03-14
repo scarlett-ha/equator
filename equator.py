@@ -1,2 +1,5 @@
 import sys
-print(' '.join(sys.argv[1:]))
+
+with open(sys.argv[1], 'r') as file:
+    for line in file:
+        print(line.rstrip('\n\r'))
